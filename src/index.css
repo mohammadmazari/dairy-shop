@@ -11,3 +11,8 @@
     button {
         font-family: ycan;
     }
+    
+    .btn {
+        background-color: red;
+        width: 100%;
+    }

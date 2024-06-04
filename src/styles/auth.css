@@ -3,13 +3,13 @@
         @apply h-[100vh] flex items-center justify-center
     }
     .form {
-        @apply bg-white border rounded-md transition-all shadow flex flex-col px-5 py-5 border-blue-200 transition items-center justify-center gap-4
+        @apply bg-white border rounded-md shadow flex flex-col px-5 py-5 border-gray-100 transition items-center justify-center gap-4
     }
     .input {
         @apply bg-white border border-2 w-full rounded-xl p-2 font-vazir font-light outline-none transition
     }
     .submitbtn {
-        @apply p-2 border-blue-500 border w-full mt-4 font-medium text-gray-700 rounded-xl text-xl
+        @apply p-2 border-blue-500 border w-full mt-4 font-medium text-gray-700 rounded-sm text-xl
     }
     .error {
         @apply border-none outline-1 outline-red-500
@@ -19,3 +19,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.d {
+    background-color: rgb(71, 71, 202);
+}
