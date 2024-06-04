@@ -6,7 +6,8 @@ export default {
     ],
     theme: {
         fontFamily: {
-            vazir: ['vazir']
+            vazir: ['vazir'],
+            ycan: ['ycan']
         },
         extend: {},
     },

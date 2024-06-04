@@ -1,0 +1,41 @@
+@font-face {
+    font-family: ycan;
+    src: url("../fonts/iranYcan/iranyekanwebblack.ttf") format("ttf"), url("../fonts/iranYcan/iranyekanwebblack.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ycan;
+    src: url("../fonts/iranYcan/iranyekanwebbold.ttf") format("ttf"), url("../fonts/iranYcan/iranyekanwebbold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ycan;
+    src: url("../fonts/iranYcan/iranyekanwebextrablack.ttf") format("ttf"), url("../fonts/iranYcan/iranyekanwebextrablack.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ycan;
+    src: url("../fonts/iranYcan/iranyekanwebextrabold.ttf") format("ttf"), url("../fonts/iranYcan/iranyekanwebextrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ycan;
+    src: url("../fonts/iranYcan/iranyekanweblight.ttf") format("ttf"), url("../fonts/iranYcan/iranyekanweblight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ycan;
+    src: url("../fonts/iranYcan//iranyekanwebmedium.ttf") format("ttf"), url("../fonts/iranYcan/iranyekanwebmedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+}

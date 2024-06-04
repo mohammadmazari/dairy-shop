@@ -1,10 +1,13 @@
-@import './assets/fonts/styelefont.css';
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
+    @import './assets/fonts/styelefont.css';
+    @import './assets/fonts/stylefontycan.css';
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    body {
+        background-color: rgb(245, 245, 245);
+    }
+    
+    input,
+    button {
+        font-family: ycan;
+    }
