@@ -1,18 +1,38 @@
-    @import './assets/fonts/styelefont.css';
-    @import './assets/fonts/stylefontycan.css';
-    @tailwind base;
-    @tailwind components;
-    @tailwind utilities;
-    body {
-        background-color: rgb(245, 245, 245);
-    }
-    
-    input,
-    button {
-        font-family: ycan;
-    }
-    
-    .btn {
-        background-color: red;
-        width: 100%;
-    }
+@import "./assets/fonts/styelefont.css";
+@import "./assets/fonts/stylefontycan.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+input,
+button {
+    font-family: ycan;
+}
+
+.btn {
+    background-color: red;
+    width: 100%;
+}
+
+body {
+    background-color: #fcfeff;
+    max-width: 1300px;
+    margin: 0px auto;
+}
+
+.text-color {
+    color: #333333;
+}
+
+.mySwiper {
+    font-size: 20px;
+    display: flex;
+    top: 20px;
+}
+
+.mybtns {
+    top: unset;
+    right: unset;
+    left: unset;
+    bottom: unset;
+    display: flex;
+}

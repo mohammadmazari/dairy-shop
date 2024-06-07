@@ -8,6 +8,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />} />
+          <Route path="/auth" element={<Auth/>} />
         </Routes>
       </BrowserRouter>
    

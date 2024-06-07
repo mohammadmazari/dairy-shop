@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+    .header-menu {
+        @apply py-5 px-3 flex justify-between border-b;
+    }
+    .content-menu {
+        @apply flex;
+    }
+    .searchbtn {
+        @apply bg-gray-200 p-2 rounded ps-3;
+    }
+    .inputbtn {
+        @apply bg-gray-200 w-full rounded p-3 font-ycan text-sm ps-5;
+    }
+}
+
+.header {
+    background-color: rgba(159, 155, 155, 0.5);
+    left: 0px;
+}
+
+.delay {
+    transition: all 0.5s;
+}
