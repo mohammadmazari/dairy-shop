@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-// import 'swiper/css';
-// import 'swiper/css/pagination';
-// import 'swiper/css/navigation';
+
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 //images
 import img1 from "../../../public/image/categoryheader/banner_CircleCategories_1OkxTf_3df5aedb-33ef-4200-a81a-a1444bcedf0e.webp";
@@ -26,11 +24,11 @@ export default function Categoryslider() {
       <Swiper
         slidesPerView={7}
         navigation={{
-          nextEl: ".swiper-button-nextx",
+          nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         }}
         modules={[Pagination, Navigation , Autoplay]}
-        className="mySwiper-sedound h-[160px] md:h-[230px] relative px-5"
+        className="mySwiper-sedound h-[160px] md:h-[230px] relative px-5 mb-[10px]"
         breakpoints={{
           100: {
             slidesPerView: 2,
@@ -211,7 +209,7 @@ export default function Categoryslider() {
         </SwiperSlide>
 
         <div className=" absolute top-[40%] left-0 pe-2 flex w-full justify-between z-20">
-          <button className="swiper-button-nextx  bg-gray-200 rounded-full p-2 shadow ">
+          <button className="swiper-button-next  bg-gray-200 rounded-full p-2 shadow ">
             <IoIosArrowForward />
           </button>
           <button className="swiper-button-prev  bg-gray-200 rounded-full p-2 shadow">

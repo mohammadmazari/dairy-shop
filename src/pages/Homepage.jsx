@@ -3,6 +3,7 @@ import Header from "../components/layout/Header";
 import Footer from "../components/layout/footer";
 import Slider from "../components/content/Slider";
 import Categoryslider from "../components/content/Categoryslider";
+import Specialsale from "../components/content/Specialsale";
 
 function Homepage() {
   return (
@@ -13,6 +14,9 @@ function Homepage() {
         <Slider />
         {/* slider category */}
         <Categoryslider />
+        <br />
+        {/* special sale */}
+        <Specialsale/>
         <Footer />
       </div>
     </>
