@@ -35,7 +35,7 @@ export default function Slider() {
             translate: ["100%", 0, 0],
           },
         }}
-        className="mySwiper relative"
+        className="mySwiper-first relative"
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -44,22 +44,34 @@ export default function Slider() {
         height={2000}
       >
         <SwiperSlide>
-          <img src={img1} />
+          <div className="img-baner">
+            <img src={img1} />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img2} />
+          <div className="img-baner">
+            <img src={img2} />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img3} />
+          <div className="img-baner">
+            <img src={img3} />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img4} />
+          <div className="img-baner">
+            <img src={img4} />
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={img5} />
-        </SwiperSlide>{" "}
+          <div className="img-baner">
+            <img src={img5} />
+          </div>
+        </SwiperSlide>
         <SwiperSlide>
-          <img src={img6} />
+          <div className="img-baner">
+            <img src={img6} />
+          </div>
         </SwiperSlide>
         <div className="btn-argoman absolute bottom-10 right-10 z-20   h-[30%] ">
           <button className="swiper-button-prev ">
@@ -69,7 +81,7 @@ export default function Slider() {
             <CiSquareChevLeft className="text-[50px] text-white" />
           </button>
 
-          <div className="swiper-pagination  mt-4 absolute top-[50px] "></div>
+          <div className="swiper-pagination first-pagination  mt-4 absolute top-[50px] "></div>
         </div>
       </Swiper>
     </>
