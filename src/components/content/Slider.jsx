@@ -74,7 +74,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <div className="btn-argoman absolute bottom-10 right-10 z-20   h-[30%] ">
-          <button className="swiper-button-prev ">
+          <button className="swiper-button-prev z-20 ">
             <CiSquareChevRight className="text-[50px] text-white " />
           </button>
           <button className="swiper-button-next mx-3">

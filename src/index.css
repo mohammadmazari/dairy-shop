@@ -3,36 +3,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+    /* //menu header styles in pc*/
+    .menu-slide {
+        @apply flex items-center px-5 gap-4 text-[15px] flex-row-reverse text-color w-[350px] justify-end cursor-pointer
+    }
+    .unde-slide-menu {
+        @apply hidden absolute right-[350px] -top-7 bg-blue-200 rounded-e-xl w-[320px] h-[450px] p-10 transition-all
+    }
+    .title-slide-menu {
+        @apply flex gap-2 items-center
+    }
+}
+
 input,
 button {
     font-family: ycan;
-}
-
-.btn {
-    background-color: red;
-    width: 100%;
 }
 
 body {
     background-color: #fcfeff;
     max-width: 1300px;
     margin: 0px auto;
+    user-select: none;
 }
 
 .text-color {
     color: #333333;
 }
 
-.mySwiper {
-    font-size: 20px;
-    display: flex;
-    top: 20px;
-}
-
-.mybtns {
-    top: unset;
-    right: unset;
-    left: unset;
-    bottom: unset;
-    display: flex;
+.menu-slide>span:nth-child(3) {
+    font-size: 2rem;
+    color: #60a5fa;
 }
