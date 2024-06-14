@@ -1,0 +1,432 @@
+{
+    "products": {
+        "mobile": [{
+                "id": 1,
+                "name": "گوشی موبایل اپل مدل iPhone 11 TH/A نات اکتیو تک سیم کارت ظرفیت 64 گیگابایت رم 4 گیگابایت",
+                "brand": "apple",
+                "price": 2500000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-36343_1a1a1a_82ccaf86-e517-4160-885c-a246c3e376e0.png",
+                "category": "لپ تاپ",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-36343_ee9851a6-d872-43a2-91df-9d24eb8135dd.webp",
+                    "https://www.technolife.ir/image/gallery-1-TLP-36343_0771b708-a281-489d-94b7-f6dad010240f.webp",
+                    "https://www.technolife.ir/image/gallery-2-TLP-36343_ec3bfd2f-9356-4dee-aefa-ea80db562900.webp",
+                    "https://www.technolife.ir/image/gallery-3-TLP-36343_ccdc6683-ee90-430c-a29f-87bb62d8e5d4.webp"
+                ],
+                "discount": {
+                    "price": 5400000,
+                    "numberdis": 2
+                },
+                "info": [{
+                        "name": "نوع پردازنده - CPU",
+                        "about": "(+Apple A13 Bionic(7 nm"
+                    },
+                    {
+                        "name": "حافظه داخلی :",
+                        "about": "64 گيگابايت"
+                    },
+                    {
+                        "name": "حافظه RAM :",
+                        "about": "4 گیگابایت"
+                    },
+                    {
+                        "name": "سایز صفحه نمایش :",
+                        "about": "6.1 اینچ "
+                    },
+                    {
+                        "name": "دوربین پشت :",
+                        "about": "دوگانه 12 مگاپیکسل + 12 مگاپیکسل"
+                    },
+                    {
+                        "name": "ظرفیت باتری :",
+                        "about": "3110 میلی آمپر ساعت"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "name": "گوشی موبایل آنر X5 Plus 4G ظرفیت 64 گیگابایت رم 4 گیگابایت",
+                "brand": "aner",
+                "price": 5200000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-32479_3479bf_192cacbd-3738-4d21-ba89-f6ce53e78843.png",
+                "category": "mobile",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-32479_e20e242a-cf6a-458c-a3f6-e849e70d110e.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-32479_d872d664-0f50-4512-9cb0-96a1d604d45b.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-32479_085b01c4-be96-4a28-bf64-4babcafe5a7a.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-36343_ccdc6683-ee90-430c-a29f-87bb62d8e5d4.webp"
+                ],
+                "discount": {
+                    "price": 4800000,
+                    "numberdis": 8
+                },
+                "info": [{
+                        "name": "نوع پردازنده - CPU",
+                        "about": "MediaTek Helio G36 (12nm)"
+                    },
+                    {
+                        "name": "حافظه داخلی :",
+                        "about": "64 گيگابايت"
+                    },
+                    {
+                        "name": "حافظه RAM :",
+                        "about": "4 گیگابایت"
+                    },
+                    {
+                        "name": "سایز صفحه نمایش :",
+                        "about": "6.5 اینچ "
+                    },
+                    {
+                        "name": "دوربین پشت :",
+                        "about": "50 مگاپیکسل عریض 2 مگاپیکسل عمق"
+                    },
+                    {
+                        "name": "ظرفیت باتری :",
+                        "about": "5200 میلی آمپر ساعت"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "name": "گوشی موبایل اپل مدل iPhone 11 TH/A نات اکتیو تک سیم کارت ظرفیت 64 گیگابایت رم 4 گیگابایت",
+                "brand": "apple",
+                "price": 54000000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-7885_e05ce0_63110715-f65e-4880-88d1-89e706a62968.png",
+                "category": " mobile",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-7885_463585da-35f4-4717-8789-eb773d3fbad7.webp",
+                    "https://www.technolife.ir/image/gallery-2-TLP-7885_20d85950-10b6-4292-8454-28800ddab5f4.webp",
+                    "https://www.technolife.ir/image/gallery-3-TLP-7885_1c04b20b-aaed-4492-8945-e125d3db890e.webp",
+                    "https://www.technolife.ir/image/gallery-3-TLP-36343_ccdc6683-ee90-430c-a29f-87bb62d8e5d4.webp"
+                ],
+                "discount": {
+                    "price": 53600000,
+                    "numberdis": 3
+                },
+                "info": [{
+                        "name": "نوع پردازنده - CPU",
+                        "about": "Apple A15 Bionic (5 نانومتر)"
+                    },
+                    {
+                        "name": "حافظه داخلی :",
+                        "about": "256 گيگابايت"
+                    },
+                    {
+                        "name": "حافظه RAM :",
+                        "about": "4 گیگابایت"
+                    },
+                    {
+                        "name": "سایز صفحه نمایش :",
+                        "about": "6.1 اینچ "
+                    },
+                    {
+                        "name": "دوربین پشت :",
+                        "about": "دوگانه 12 مگاپیکسل + 12 مگاپیکسل"
+                    },
+                    {
+                        "name": "ظرفیت باتری :",
+                        "about": "3240 میلی آمپر ساعت"
+                    }
+                ]
+            },
+            {
+                "id": 4,
+                "name": "گوشی موبایل جی ال ایکس مدل F8 Plus دو سیم کارت",
+                "brand": "apple",
+                "price": 890000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-16355_006cf0_7eacc17a-b797-41dc-b474-bd236e330157.png",
+                "category": " mobile",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-16355_ab657092-3939-4fe9-88b6-275f888a928d.png",
+                    "https://www.technolife.ir/image/gallery-0-TLP-16355_d81ebd11-1749-41fa-bdeb-a6e687831f54.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-16355_48d64738-1a53-43cc-ad8e-e90a3db29ece.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-16355_4599de0c-0ae1-495b-b658-c0dca2b02328.png"
+                ],
+                "discount": {
+                    "price": 850000,
+                    "numberdis": 3
+                },
+                "info": [{
+                        "name": "حافظه داخلی :",
+                        "about": "ندارد "
+                    },
+                    {
+                        "name": "حافظه RAM :",
+                        "about": "ندارد"
+                    },
+                    {
+                        "name": "سایز صفحه نمایش :",
+                        "about": "1.77 اینچ "
+                    },
+                    {
+                        "name": "دوربین پشت :",
+                        "about": "ندارد"
+                    },
+                    {
+                        "name": "ظرفیت باتری :",
+                        "about": "1600 میلی آمپر ساعت"
+                    }
+                ]
+            },
+            {
+                "id": 5,
+                "name": "گوشی موبايل پوکو مدل X6 Pro 5G ظرفیت 512 گیگابایت رم 12 گیگابایت",
+                "brand": "not",
+                "price": 22000000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-32884_1a1a1a_7932b88a-a202-4c1f-a115-53395ab053d3.png",
+                "category": " mobile",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-32884_592786f1-50b6-4995-93cf-05ac7a670018.png",
+                    "https://www.technolife.ir/image/gallery-1-TLP-32884_9076521b-dacf-4a20-b032-7e7098740531.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-32884_8960419d-04b0-419e-ba4c-4f039a32476f.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-32884_a1a6961a-3bc8-41db-8d2c-8160c5f72290.png"
+                ],
+                "discount": {
+                    "price": 21900000,
+                    "numberdis": 3
+                },
+                "info": [{
+                        "name": "نوع پردازنده - CPU",
+                        "about": "Mediatek Dimensity 8300 Ultra (4 نانومتری)"
+                    },
+                    {
+                        "name": "حافظه داخلی :",
+                        "about": "512 گیگابایت"
+                    },
+                    {
+                        "name": "حافظه RAM :",
+                        "about": "12 گیگابایت"
+                    },
+                    {
+                        "name": "سایز صفحه نمایش :",
+                        "about": "6.77 اینچ "
+                    },
+                    {
+                        "name": "دوربین پشت :",
+                        "about": " سه گانه 64 مگاپیکسل + 8 مگاپیکسل + 2 مگاپیکسل "
+                    },
+                    {
+                        "name": "ظرفیت باتری :",
+                        "about": "5000 میلی آمپر ساعت"
+                    }
+                ]
+            }
+        ],
+        "laptop": [{
+                "id": 6,
+                "name": "لپ تاپ لنوو 15.6 اینچی مدل IdeaPad Gaming 3 15IAH7 12650H i7 32GB 1TB SSD",
+                "brand": "asus",
+                "price": 49900000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-15105_1a1a1a_5b4d4b4f-26bc-476f-9006-1ccb4ff9685e.png",
+                "category": " laptop",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-32884_592786f1-50b6-4995-93cf-05ac7a670018.png",
+                    "https://www.technolife.ir/image/gallery-0-TLP-15105_28b3b07c-ef64-4365-a7ce-42dd95f44e3a.webp",
+                    "https://www.technolife.ir/image/gallery-2-TLP-15105_587ade3c-baeb-4f76-9853-244e4f08a574.webp",
+                    "https://www.technolife.ir/image/gallery-3-TLP-15105_9aa75ad9-00d6-4061-909d-916ac1637d70.webp"
+                ],
+                "discount": {
+                    "price": 48000000,
+                    "numberdis": 3
+                },
+                "info": [{
+                        "name": "ابعاد نمایشگر :",
+                        "about": "15.6 اینچ"
+                    },
+                    {
+                        "name": " سری پردازنده  :",
+                        "about": "512 گیگابایت"
+                    },
+                    {
+                        "name": "ظرفیت حافظه RAM :",
+                        "about": "32 گیگابایت"
+                    },
+                    {
+                        "name": "سایز صفحه نمایش :",
+                        "about": "6.77 اینچ "
+                    },
+                    {
+                        "name": " سازنده پردازنده گرافیکی :",
+                        "about": "NVIDIA"
+                    },
+                    {
+                        "name": "  ظرفیت حافظه داخلی :",
+                        "about": "1 ترابایت "
+                    }
+                ]
+            },
+            {
+                "id": 7,
+                "name": "لپ تاپ 15.6 اینچی ایسوس مدل ROG Strix G15 G513RM R7 16G 1T SSD",
+                "brand": "asus",
+                "price": 76000000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-7659_8f8f8f_97790e9d-1a8d-4ab7-a1a4-149ff4405b2c.png",
+                "category": " laptop",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-7659_d285f1c5-0bef-4fd1-9751-ade47df92e24.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-7659_9ab7ad20-fd92-452b-9b79-cdec4abc842b.png",
+                    "https://www.technolife.ir/image/color_image_TLP-7659_8f8f8f_97790e9d-1a8d-4ab7-a1a4-149ff4405b2c.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-7659_3194095e-d3f3-4858-803e-c7e90fc24d96.png"
+                ],
+                "discount": {
+                    "price": 75000000,
+                    "numberdis": 4
+                },
+                "info": [{
+                        "name": "نوع کاربری :",
+                        "about": "گیمینگ/ عمومی/ مالتی مدیا"
+                    },
+                    {
+                        "name": "ابعاد نمایشگر :",
+                        "about": "15.6 اینچ"
+                    },
+                    {
+                        "name": " سری پردازنده  :",
+                        "about": "گیمینگ/ عمومی/ مالتی مدیا "
+                    },
+                    {
+                        "name": "ظرفیت حافظه RAM :",
+                        "about": "16 گیگابایت"
+                    },
+
+                    {
+                        "name": " سازنده پردازنده گرافیکی :",
+                        "about": "NVIDIA"
+                    },
+                    {
+                        "name": "  ظرفیت حافظه داخلی :",
+                        "about": "1 ترابایت "
+                    }
+                ]
+            },
+            {
+                "id": 8,
+                "name": "لپ تاپ لنوو 15.6 اینچی مدل LOQ Gaming 15IRH8 i7 13620H 64GB 4TB RTX 4060",
+                "brand": "lenovo ",
+                "price": 81500000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-29117_16fb809f-0c41-4baa-8f91-dc2b70f23be9.png",
+                "category": " laptop",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-29117_d8872190-7fba-4825-8b00-39df9db2b49d.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-29117_c44ac983-1be0-4c52-9ca6-410c5bfc2843.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-29117_d090b353-e7a1-4cd6-9d05-fb6adb3b1b98.png",
+                    "https://www.technolife.ir/image/color_image_TLP-29117_16fb809f-0c41-4baa-8f91-dc2b70f23be9.png"
+                ],
+                "discount": {
+                    "price": 75000000,
+                    "numberdis": 8
+                },
+                "info": [{
+                        "name": "نوع کاربری :",
+                        "about": "گیمنگ"
+                    },
+                    {
+                        "name": "ابعاد نمایشگر :",
+                        "about": "15.6 اینچ"
+                    },
+                    {
+                        "name": " سری پردازنده  :",
+                        "about": "Core i7"
+                    },
+                    {
+                        "name": "ظرفیت حافظه RAM :",
+                        "about": "16 گیگابایت"
+                    },
+
+                    {
+                        "name": " سازنده پردازنده گرافیکی :",
+                        "about": "NVIDIA"
+                    },
+                    {
+                        "name": "  ظرفیت حافظه داخلی :",
+                        "about": "4 ترابایت "
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "name": "لپ تاپ اپل 15 اینچی مدل MacBook Air 15 MQK V3 M2 8GB 512GB",
+                "brand": "apple",
+                "price": 81500000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-24593_b48458_29b7276b-f331-45ff-bb34-9b5154dae586.png",
+                "category": " laptop",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-24593_d44a9e87-46b7-48dd-9558-f72867dc9907.webp",
+                    "https://www.technolife.ir/image/gallery-1-TLP-24593_dd73fbf5-0067-49e7-933d-01a31faaf9b9.webp",
+                    "https://www.technolife.ir/image/gallery-0-TLP-24593_d44a9e87-46b7-48dd-9558-f72867dc9907.webp",
+                    "https://www.technolife.ir/image/gallery-0-TLP-24593_d44a9e87-46b7-48dd-9558-f72867dc9907.webp"
+                ],
+                "discount": {
+                    "price": 75000000,
+                    "numberdis": 8
+                },
+                "info": [{
+                        "name": "ابعاد نمایشگر :",
+                        "about": "15.6 اینچ"
+                    },
+                    {
+                        "name": " سری پردازنده  :",
+                        "about": "Apple M2"
+                    },
+                    {
+                        "name": "ظرفیت حافظه RAM :",
+                        "about": "16 گیگابایت"
+                    },
+
+                    {
+                        "name": " سازنده پردازنده گرافیکی :",
+                        "about": "Apple"
+                    },
+                    {
+                        "name": "  ظرفیت حافظه داخلی :",
+                        "about": "500 گیگابایت "
+                    }
+                ]
+            },
+            {
+                "id": 10,
+                "name": "لپ تاپ لنوو 15.6 اینچی مدل LOQ R7 7840HS 16GB 512GB RTX3050",
+                "brand": "apple",
+                "price": 46200000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-33662_8f8f8f_6eb204cc-a899-4438-bbbd-36699b10dae6.png",
+                "category": " laptop",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-33662_ab019118-ccee-4166-b633-57ffb4dc2099.png",
+                    "https://www.technolife.ir/image/gallery-6-TLP-33662_234d02c4-8070-4e6c-a238-f99b992fd132.png",
+                    "https://www.technolife.ir/image/gallery-8-TLP-33662_7ffbc329-2795-4c4e-811c-5f725418613d.webp",
+                    "https://www.technolife.ir/image/gallery-8-TLP-33662_7ffbc329-2795-4c4e-811c-5f725418613d.webp"
+                ],
+                "discount": {
+                    "price": 41500000,
+                    "numberdis": 7
+                },
+                "info": [{
+                        "name": " نوع کاربری :",
+                        "about": " گیمنگ"
+                    },
+                    {
+                        "name": "ابعاد نمایشگر :",
+                        "about": "15.6 اینچ"
+                    },
+                    {
+                        "name": " سری پردازنده  :",
+                        "about": " Ryzen 7"
+                    },
+                    {
+                        "name": "ظرفیت حافظه RAM :",
+                        "about": "16 گیگابایت"
+                    },
+
+                    {
+                        "name": " سازنده پردازنده گرافیکی :",
+                        "about": "NVIDIA"
+                    },
+                    {
+                        "name": "  ظرفیت حافظه داخلی :",
+                        "about": "500 گیگابایت "
+                    }
+                ]
+            }
+        ]
+    }
+}
