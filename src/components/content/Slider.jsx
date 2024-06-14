@@ -7,6 +7,7 @@ import { EffectCreative } from "swiper/modules";
 import { CiSquareChevLeft } from "react-icons/ci";
 import { CiSquareChevRight } from "react-icons/ci";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import img0 from "../../../public/image/banner_SlideBanner_m61AVs_24fb0d33-09d5-40b3-9a58-9c85f98236d5.gif";
 import img1 from "../../../public/image/banner_SlideBanner_SCy2e5_b350727e-8bf1-4051-9c98-0cd2d57a8647.webp";
 import img2 from "../../../public/image/banner_SlideBanner_FrIE5b_2c3dc25e-ad83-4a47-a062-65317ba14f16.webp";
 import img3 from "../../../public/image/banner_SlideBanner_h4o6Ia_a45595ae-72bb-4b6d-a997-26f1d887a2f3.webp";
@@ -35,7 +36,7 @@ export default function Slider() {
             translate: ["100%", 0, 0],
           },
         }}
-        className="mySwiper-first relative"
+        className="mySwiper-first mt-5 xl:mt-0 relative"
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -46,6 +47,11 @@ export default function Slider() {
         <SwiperSlide>
           <div className="img-baner">
             <img src={img1} />
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="img-baner">
+            <img src={img0} />
           </div>
         </SwiperSlide>
         <SwiperSlide>
