@@ -16,7 +16,7 @@ import { MdOutlineAddHomeWork } from "react-icons/md";
 function MenuHeader() {
   return (
     <>
-      <div className="hidden xl:flex h-[70px]  text-color mt-2 text-[13px] font-vazir  items-center gap-10">
+      <div className="hidden xl:flex h-[70px]  text-gray-500 mt-2 text-[13px] font-vazir  items-center gap-5">
         {/* //item 1 */}
         <div className="flex relative group/menu h-full items-center justify-center  cursor-pointer">
           <p className="title-slide-menu ">
@@ -26,7 +26,7 @@ function MenuHeader() {
             <span>موبایل</span>
           </p>
           <div className=" hidden group-hover/menu:block absolute top-[70px] right-0  bg-white rounded-xl py-8  border  flex flex-col gap-10 z-10 shadow items-start ">
-            <div className=" relative flex flex-col gap-10">
+            <div className=" relative flex flex-col gap-10 text-gray-500">
               {/* //underslide mobile */}
               <div className="menu-slide group/color1">
                 <FaAngleLeft className="text-color  absolute left-5 group-hover/color1:text-blue-400" />

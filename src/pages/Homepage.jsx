@@ -7,13 +7,12 @@ import Specialsale from "../components/content/Specialsale";
 import MenuHeader from "../components/content/MenuHeader";
 import Triple_banner from "../components/content/Triple_banner";
 import myproducts from "../products/products.json";
-
 export const Context = createContext();
 function Homepage() {
   const [products, setporducts] = useState(myproducts);
   return (
     <>
-      <div className="p-5">
+      <div className="p-2 ">
         <Context.Provider value={products}>
           <Header />
           {/* menu */}
@@ -27,6 +26,7 @@ function Homepage() {
           <Specialsale />
           {/* triple banner */}
           <Triple_banner />
+
           <Footer />
         </Context.Provider>
       </div>

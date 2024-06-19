@@ -1,12 +1,12 @@
 {
     "products": {
-        "mobile": [{
+        "موبایل": [{
                 "id": 1,
                 "name": "گوشی موبایل اپل مدل iPhone 11 TH/A نات اکتیو تک سیم کارت ظرفیت 64 گیگابایت رم 4 گیگابایت",
                 "brand": "apple",
                 "price": 2500000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-36343_1a1a1a_82ccaf86-e517-4160-885c-a246c3e376e0.png",
-                "category": "لپ تاپ",
+                "category": " موبایل",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-0-TLP-36343_ee9851a6-d872-43a2-91df-9d24eb8135dd.webp",
                     "https://www.technolife.ir/image/gallery-1-TLP-36343_0771b708-a281-489d-94b7-f6dad010240f.webp",
@@ -17,6 +17,12 @@
                     "price": 5400000,
                     "numberdis": 2
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "زرد", "code": "#d3ce35" }
+                ],
+
                 "info": [{
                         "name": "نوع پردازنده - CPU",
                         "about": "(+Apple A13 Bionic(7 nm"
@@ -49,7 +55,7 @@
                 "brand": "aner",
                 "price": 5200000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-32479_3479bf_192cacbd-3738-4d21-ba89-f6ce53e78843.png",
-                "category": "mobile",
+                "category": "موبایل",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-1-TLP-32479_e20e242a-cf6a-458c-a3f6-e849e70d110e.png",
                     "https://www.technolife.ir/image/gallery-2-TLP-32479_d872d664-0f50-4512-9cb0-96a1d604d45b.png",
@@ -92,7 +98,7 @@
                 "brand": "apple",
                 "price": 54000000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-7885_e05ce0_63110715-f65e-4880-88d1-89e706a62968.png",
-                "category": " mobile",
+                "category": " موبایل",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-1-TLP-7885_463585da-35f4-4717-8789-eb773d3fbad7.webp",
                     "https://www.technolife.ir/image/gallery-2-TLP-7885_20d85950-10b6-4292-8454-28800ddab5f4.webp",
@@ -103,6 +109,11 @@
                     "price": 53600000,
                     "numberdis": 3
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "زرد", "code": "#d3ce35" }
+                ],
                 "info": [{
                         "name": "نوع پردازنده - CPU",
                         "about": "Apple A15 Bionic (5 نانومتر)"
@@ -135,7 +146,7 @@
                 "brand": "apple",
                 "price": 890000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-16355_006cf0_7eacc17a-b797-41dc-b474-bd236e330157.png",
-                "category": " mobile",
+                "category": " موبایل",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-1-TLP-16355_ab657092-3939-4fe9-88b6-275f888a928d.png",
                     "https://www.technolife.ir/image/gallery-0-TLP-16355_d81ebd11-1749-41fa-bdeb-a6e687831f54.png",
@@ -174,7 +185,7 @@
                 "brand": "not",
                 "price": 22000000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-32884_1a1a1a_7932b88a-a202-4c1f-a115-53395ab053d3.png",
-                "category": " mobile",
+                "category": " موبایل",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-0-TLP-32884_592786f1-50b6-4995-93cf-05ac7a670018.png",
                     "https://www.technolife.ir/image/gallery-1-TLP-32884_9076521b-dacf-4a20-b032-7e7098740531.png",
@@ -185,6 +196,11 @@
                     "price": 21900000,
                     "numberdis": 3
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "زرد", "code": "#d3ce35" }
+                ],
                 "info": [{
                         "name": "نوع پردازنده - CPU",
                         "about": "Mediatek Dimensity 8300 Ultra (4 نانومتری)"
@@ -212,13 +228,13 @@
                 ]
             }
         ],
-        "laptop": [{
+        "لپتاپ": [{
                 "id": 6,
                 "name": "لپ تاپ لنوو 15.6 اینچی مدل IdeaPad Gaming 3 15IAH7 12650H i7 32GB 1TB SSD",
                 "brand": "asus",
                 "price": 49900000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-15105_1a1a1a_5b4d4b4f-26bc-476f-9006-1ccb4ff9685e.png",
-                "category": " laptop",
+                "category": " لپتاپ",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-0-TLP-32884_592786f1-50b6-4995-93cf-05ac7a670018.png",
                     "https://www.technolife.ir/image/gallery-0-TLP-15105_28b3b07c-ef64-4365-a7ce-42dd95f44e3a.webp",
@@ -261,7 +277,7 @@
                 "brand": "asus",
                 "price": 76000000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-7659_8f8f8f_97790e9d-1a8d-4ab7-a1a4-149ff4405b2c.png",
-                "category": " laptop",
+                "category": " لپتاپ",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-1-TLP-7659_d285f1c5-0bef-4fd1-9751-ade47df92e24.png",
                     "https://www.technolife.ir/image/gallery-2-TLP-7659_9ab7ad20-fd92-452b-9b79-cdec4abc842b.png",
@@ -272,6 +288,11 @@
                     "price": 75000000,
                     "numberdis": 4
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "ابی", "code": "#5484ae" }
+                ],
                 "info": [{
                         "name": "نوع کاربری :",
                         "about": "گیمینگ/ عمومی/ مالتی مدیا"
@@ -305,7 +326,7 @@
                 "brand": "lenovo ",
                 "price": 81500000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-29117_16fb809f-0c41-4baa-8f91-dc2b70f23be9.png",
-                "category": " laptop",
+                "category": " لپتاپ",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-1-TLP-29117_d8872190-7fba-4825-8b00-39df9db2b49d.png",
                     "https://www.technolife.ir/image/gallery-2-TLP-29117_c44ac983-1be0-4c52-9ca6-410c5bfc2843.png",
@@ -316,6 +337,11 @@
                     "price": 75000000,
                     "numberdis": 8
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "ابی", "code": "#5484ae" }
+                ],
                 "info": [{
                         "name": "نوع کاربری :",
                         "about": "گیمنگ"
@@ -346,10 +372,10 @@
             {
                 "id": 9,
                 "name": "لپ تاپ اپل 15 اینچی مدل MacBook Air 15 MQK V3 M2 8GB 512GB",
-                "brand": "apple",
+                "brand": "hp",
                 "price": 81500000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-24593_b48458_29b7276b-f331-45ff-bb34-9b5154dae586.png",
-                "category": " laptop",
+                "category": " لپتاپ",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-0-TLP-24593_d44a9e87-46b7-48dd-9558-f72867dc9907.webp",
                     "https://www.technolife.ir/image/gallery-1-TLP-24593_dd73fbf5-0067-49e7-933d-01a31faaf9b9.webp",
@@ -360,6 +386,11 @@
                     "price": 75000000,
                     "numberdis": 8
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "ابی", "code": "#5484ae" }
+                ],
                 "info": [{
                         "name": "ابعاد نمایشگر :",
                         "about": "15.6 اینچ"
@@ -389,7 +420,7 @@
                 "brand": "apple",
                 "price": 46200000,
                 "image": "https://www.technolife.ir/image/color_image_TLP-33662_8f8f8f_6eb204cc-a899-4438-bbbd-36699b10dae6.png",
-                "category": " laptop",
+                "category": " لپتاپ",
                 "galleryimage": [
                     "https://www.technolife.ir/image/gallery-0-TLP-33662_ab019118-ccee-4166-b633-57ffb4dc2099.png",
                     "https://www.technolife.ir/image/gallery-6-TLP-33662_234d02c4-8070-4e6c-a238-f99b992fd132.png",
@@ -400,6 +431,11 @@
                     "price": 41500000,
                     "numberdis": 7
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "ابی", "code": "#5484ae" }
+                ],
                 "info": [{
                         "name": " نوع کاربری :",
                         "about": " گیمنگ"
@@ -424,6 +460,404 @@
                     {
                         "name": "  ظرفیت حافظه داخلی :",
                         "about": "500 گیگابایت "
+                    }
+                ]
+            }
+        ],
+        "ساعت": [{
+                "id": 11,
+                "name": "ساعت هوشمند میبرو لایت 2 Mibro Lite",
+                "brand": "SmartWatch",
+                "price": 2048000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-10751_1a1a1a_b30920e4-1e42-4db5-9e06-cf486ba2f981.png",
+                "category": " ساعت",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-10751_6954e8e8-5b5b-4a0f-9d61-367517624f80.png",
+                    "https://www.technolife.ir/image/gallery-1-TLP-10751_2638fa9d-5cb0-4727-82d3-3305635d4890.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-10751_0065bdf3-87ec-4c46-8815-de85dc98f5ce.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-10751_7cee78f3-6f7a-4fd9-9271-8b311d29a6a6.png"
+                ],
+                "discount": {
+                    "price": 2000000,
+                    "numberdis": 4
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "ابی", "code": "#5484ae" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": " اندروید و iOS "
+                    },
+                    {
+                        "name": "ظرفیت باطری  :",
+                        "about": "350 میلی آمپر ساعت "
+                    },
+                    {
+                        "name": "پشتیبانی از زبان فارسی در اعلان و پیام :",
+                        "about": " دارد"
+                    },
+                    {
+                        "name": "قابلیت مکالمه :",
+                        "about": "دارد "
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "name": "ساعت هوشمند اچ کی مدل HK9 Ultra 2 Max",
+                "brand": "SmartWatch",
+                "price": 1700000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-38677_c5bfbf_92125055-c5b5-47d8-870d-ae1b57297770.png",
+                "category": " ساعت",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-38677_a17c9371-3329-4d69-8bd7-951da259b46e.png",
+                    "https://www.technolife.ir/image/gallery-1-TLP-38677_e6203a3b-d0cb-47a0-84ed-e9424bf60e68.png",
+                    "https://www.technolife.ir/image/gallery-4-TLP-38677_4d1f1d93-0676-4597-ba16-68fe542740a0.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-38677_d6712293-93ad-423c-ae88-be4dcb921e0e.png"
+                ],
+                "discount": {
+                    "price": 1200000,
+                    "numberdis": 4
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "اندروید 7 به بالا و iOS 10 به بالا "
+                    },
+                    {
+                        "name": "ظرفیت باطری  :",
+                        "about": "350 میلی آمپر ساعت "
+                    },
+                    {
+                        "name": "پشتیبانی از زبان فارسی در اعلان و پیام :",
+                        "about": " دارد"
+                    },
+                    {
+                        "name": "قابلیت مکالمه :",
+                        "about": "دارد "
+                    }
+                ]
+            },
+            {
+                "id": 13,
+                "name": "ساعت هوشمند سامسونگ مدل Galaxy Watch6 44mm",
+                "brand": "SmartWatch",
+                "price": 9400000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-25126_1a1a1a_6fb645ea-17d5-4386-b1eb-3945f005462e.png",
+                "category": " ساعت",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-38677_a17c9371-3329-4d69-8bd7-951da259b46e.png",
+                    "https://www.technolife.ir/image/gallery-4-TLP-25126_03ca90ad-c8f3-4f1e-99e6-c7c92688086d.png",
+                    "https://www.technolife.ir/image/gallery-4-TLP-25126_03ca90ad-c8f3-4f1e-99e6-c7c92688086d.png",
+                    "https://www.technolife.ir/image/gallery-6-TLP-25126_d476f4da-c28c-491e-95ed-b8339abf155a.png"
+                ],
+                "discount": {
+                    "price": 8500000,
+                    "numberdis": 5
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "ابی", "code": "#5484ae" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "اندروید 7 به بالا و iOS 10 به بالا "
+                    },
+                    {
+                        "name": "ظرفیت باطری  :",
+                        "about": "420 میلی آمپر ساعت "
+                    },
+                    {
+                        "name": "پشتیبانی از زبان فارسی در اعلان و پیام :",
+                        "about": " دارد"
+                    },
+                    {
+                        "name": "قابلیت مکالمه :",
+                        "about": "دارد "
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "name": "ساعت هوشمند ایمیکی مدل TG1",
+                "brand": "SmartWatch",
+                "price": 1795000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-22679_0024cb_bae590a3-65dc-4d9e-a24f-0d54f163cf25.png",
+                "category": " ساعت",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-22679_948f8e4e-554c-4af4-800d-7953f5bb0518.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-22679_43d65fa2-11a3-4962-bcaf-a9b7d08ea6fd.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-22679_e341e5c1-318e-4154-86f8-02dc02729c54.png",
+                    "https://www.technolife.ir/image/gallery-6-TLP-25126_d476f4da-c28c-491e-95ed-b8339abf155a.png"
+                ],
+                "discount": {
+                    "price": 1650000,
+                    "numberdis": 5
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "ابی", "code": "#5484ae" },
+                    { "name": "سبز", "code": "#b0e98d" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "اندروید 7 به بالا و iOS 10 به بالا "
+                    },
+                    {
+                        "name": "ظرفیت باطری  :",
+                        "about": "420 میلی آمپر ساعت "
+                    },
+                    {
+                        "name": "پشتیبانی از زبان فارسی در اعلان و پیام :",
+                        "about": " دارد"
+                    },
+                    {
+                        "name": "قابلیت مکالمه :",
+                        "about": "دارد "
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "name": "ساعت هوشمند ایمیکی مدل TG1",
+                "brand": "SmartWatch",
+                "price": 1800000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-32740_1a1a1a_d90b93ce-12f6-476b-8627-f5513a4089ae.png",
+                "category": " ساعت",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-32740_e649dbaa-97da-42e9-929b-140e490b3cce.png",
+                    "https://www.technolife.ir/image/gallery-1-TLP-32740_e649dbaa-97da-42e9-929b-140e490b3cce.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-32740_f95b5841-3923-46bf-8af5-a0e1175222a3.png",
+                    "https://www.technolife.ir/image/gallery-6-TLP-25126_d476f4da-c28c-491e-95ed-b8339abf155a.png"
+                ],
+                "discount": {
+                    "price": 1650000,
+                    "numberdis": 5
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "سبز", "code": "#b0e98d" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "اندروید 7 به بالا و iOS 10 به بالا "
+                    },
+                    {
+                        "name": "ظرفیت باطری  :",
+                        "about": "420 میلی آمپر ساعت "
+                    },
+                    {
+                        "name": "پشتیبانی از زبان فارسی در اعلان و پیام :",
+                        "about": " دارد"
+                    },
+                    {
+                        "name": "قابلیت مکالمه :",
+                        "about": "دارد "
+                    }
+                ]
+            }
+        ],
+        "هدفون": [{
+                "id": 16,
+                "name": "هندزفری بلوتوثی انکر مدل Soundcore Liberty 4 NC A3947",
+                "brand": "Xiaomi",
+                "price": 3500000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-28525_1a1a1a_327c482c-ad67-4894-9bb0-493c9376e62e.png",
+                "category": " هدفون",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-28525_aa6295d6-6cee-4eb0-a851-abfbfd664a56.png",
+                    "https://www.technolife.ir/image/gallery-1-TLP-28525_86277355-c968-4fda-9e2c-e73371472294.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-28525_f7a586a7-bffd-40cd-8636-cebe044cde94.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-28525_ad82d4be-5f2d-4bdb-8e08-f113bdc57f2a.png"
+                ],
+                "discount": {
+                    "price": 3330000,
+                    "numberdis": 5
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "سرمه ای", "code": "#000898" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "اندروید، iOS، ویندوز "
+                    },
+                    {
+                        "name": " نوع اتصال  :",
+                        "about": " بیسیم"
+                    },
+                    {
+                        "name": "بلوتوث:",
+                        "about": " 5.3"
+                    },
+                    {
+                        "name": "قابلیت حذف نویز (ANC) :",
+                        "about": "دارد "
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "name": "هندزفری بی سیم انکر مدل soundcore life u2i",
+                "brand": "Xiaomi",
+                "price": 820000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-9784_1a1a1a_a0b83b0f-1e64-4979-b531-42ce714336b7.png",
+                "category": " هدفون",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-7-TLP-9784_002f06c9-9538-4ec0-8240-dd14173f09ab.png",
+                    "https://www.technolife.ir/image/gallery-9-TLP-9784_4b8877a6-77a9-430d-9c82-16535812ba97.png",
+                    "https://www.technolife.ir/image/gallery-9-TLP-9784_4b8877a6-77a9-430d-9c82-16535812ba97.png",
+                    "https://www.technolife.ir/image/gallery-7-TLP-9784_002f06c9-9538-4ec0-8240-dd14173f09ab.png"
+                ],
+                "discount": {
+                    "price": 790000,
+                    "numberdis": 5
+                },
+                "colors": [{ "name": "مشکی", "code": "#1a1a1a" }],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "اندروید، iOS، ویندوز "
+                    },
+                    {
+                        "name": " نوع اتصال  :",
+                        "about": " بیسیم"
+                    },
+                    {
+                        "name": "بلوتوث:",
+                        "about": " 5.3"
+                    },
+                    {
+                        "name": "قطر درایور (اسپیکر) :",
+                        "about": "10 میلی متر "
+                    }
+                ]
+            },
+            {
+                "id": 18,
+                "name": "هدفون بلوتوثی مدل P47",
+                "brand": "Xiaomi",
+                "price": 140000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-29134_1a1a1a_9b0e716f-8eb0-4496-8f3d-3931c42cc87b.png",
+                "category": " هدفون",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-0-TLP-29134_f549e8b4-d9fa-456e-8de5-4f99916f8f66.png",
+                    "https://www.technolife.ir/image/gallery-1-TLP-29134_fdebc7b7-9167-4c6b-a31b-98b5fbf0e78d.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-29134_529cbb94-fc40-498a-964e-b2f7a76d90a5.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-29134_d0691f79-e990-47dd-93f2-6d8bed53649d.png"
+                ],
+                "discount": {
+                    "price": 117000,
+                    "numberdis": 4
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "سبز", "code": "#22a148" },
+                    { "name": "ابی", "code": "#007bbc" },
+                    { "name": "قرمز", "code": "#bb3939" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "با دستگاه های دارای بلوتوث و جک 3.5 میلی متری"
+                    },
+                    {
+                        "name": " نوع اتصال  :",
+                        "about": " بیسیم"
+                    },
+                    {
+                        "name": "بلوتوث:",
+                        "about": " 5.3"
+                    },
+                    {
+                        "name": "قطر درایور (اسپیکر) :",
+                        "about": "10 میلی متر "
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "name": "هدفون بی سیم نیا مدل Q8 Ver3",
+                "brand": "Xiaomi",
+                "price": 403000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-28530_e03131_12b4cdec-7934-4993-accf-408f93a5c9df.png",
+                "category": " هدفون",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-1-TLP-28530_ffcf9c10-503b-44d3-9516-9e7f521180d6.png",
+                    "https://www.technolife.ir/image/gallery-2-TLP-28530_1144406b-7bdf-4642-b16d-8974a2750afc.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-28530_5d7bf0f5-0b88-4882-99d3-090e6d074e5e.png",
+                    "https://www.technolife.ir/image/gallery-4-TLP-28530_75d93602-107a-4319-a967-c7e937966288.png"
+                ],
+                "discount": {
+                    "price": 347000,
+                    "numberdis": 6
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "صورتی", "code": "#ea6adc" },
+                    { "name": "بنفش", "code": "#bb2bac" },
+                    { "name": "قرمز", "code": "#bb3939" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "با دستگاه های دارای بلوتوث و جک 3.5 میلی متری"
+                    },
+                    {
+                        "name": " نوع اتصال  :",
+                        "about": " بیسیم"
+                    },
+                    {
+                        "name": "بلوتوث:",
+                        "about": " 5.3"
+                    },
+                    {
+                        "name": "قطر درایور (اسپیکر) :",
+                        "about": "10 میلی متر "
+                    }
+                ]
+            },
+            {
+                "id": 20,
+                "name": "هندزفری بلوتوثی انکر مدل Soundcore AeroFit A3872",
+                "brand": "Xiaomi",
+                "price": 640000,
+                "image": "https://www.technolife.ir/image/color_image_TLP-33203_ffffff_759ae253-efde-445b-9248-a235c680b910.png",
+                "category": " هدفون",
+                "galleryimage": [
+                    "https://www.technolife.ir/image/gallery-2-TLP-33203_8aa48ae1-de68-4359-b075-c0daae3f5af2.png",
+                    "https://www.technolife.ir/image/gallery-3-TLP-33203_3e537e00-3d34-43ec-8ee1-1cca635e33ee.png",
+                    "https://www.technolife.ir/image/gallery-4-TLP-33203_c55bc265-2e48-47b7-9ff6-c113bc7a8234.png",
+                    "https://www.technolife.ir/image/gallery-5-TLP-33203_8737eebe-0abb-43f8-80b7-047b5cd042b8.png"
+                ],
+                "discount": {
+                    "price": 400000,
+                    "numberdis": 20
+                },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "سفید", "code": "#e9e6e6" }
+                ],
+                "info": [{
+                        "name": " سازگاری :",
+                        "about": "با دستگاه های دارای بلوتوث و جک 3.5 میلی متری"
+                    },
+                    {
+                        "name": " نوع اتصال  :",
+                        "about": " بیسیم"
+                    },
+                    {
+                        "name": "بلوتوث:",
+                        "about": " 5.3"
+                    },
+                    {
+                        "name": "قطر درایور (اسپیکر) :",
+                        "about": "10 میلی متر "
                     }
                 ]
             }
