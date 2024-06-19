@@ -11,11 +11,26 @@ import { IoStorefront } from "react-icons/io5";
 import { MdOutlineCreditScore } from "react-icons/md";
 import { GrStatusGood } from "react-icons/gr";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaLongArrowAltLeft } from "react-icons/fa";
+import { IoStorefrontSharp } from "react-icons/io5";
+import { FaChevronLeft } from "react-icons/fa";
 import "swiper/css";
 import { Pagination } from "swiper/modules";
+import imgexpress from "../../../public/image/expres.svg";
+import Modalexpress2 from "../helper/Modalexpress2";
+import Modalexpress from "../helper/Modalexpress";
 function Infoproduct({ product }) {
-  const { id, name, colors, info, discount, image, galleryimage, price } =
-    product;
+  const {
+    id,
+    name,
+    colors,
+    info,
+    discount,
+    express,
+    image,
+    galleryimage,
+    price,
+  } = product;
   const [selected, setselected] = useState();
   const [selectedcolor, setselectedcolor] = useState();
   const selectedhandler = (e) => {
@@ -25,11 +40,13 @@ function Infoproduct({ product }) {
     }
   };
   return (
-    <div className="flex flex-col p-5 xl:flex-row justify-between gap-2">
+    <div className="flex flex-col p-2 xl:p-5 xl:flex-row justify-between gap-2">
       {/* //title product */}
       <div className="w-[100%] xl:w-[40%] order-2 xl:order-1">
         <div>
-          <p className="text-sm xl:text-md font-ycan text-color font-extrabold ">{name}</p>
+          <p className="text-sm xl:text-md font-ycan text-color font-extrabold ">
+            {name}
+          </p>
           <p className="flex gap-2 font-ycan text-[13px] mt-4 text-color pb-2 ">
             <span>نظرات کاربران </span>
             <span className="text-orange-700">{digitsEnToFa(1)}</span>
@@ -206,18 +223,80 @@ function Infoproduct({ product }) {
             افزودن به سبد خرید <HiOutlineShoppingCart size={"20px"} />
           </button>
         </div>
+        {/* //express send */}
+        {express && (
+          <div className=" bg-white border p-3 py-5 rounded-xl shadow-xl mt-5">
+            <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   mt-5  font-ycan  bg-white border p-[2px] rounded shadow-xl">
+              <div className="flex flex-row-reverse p-5  justify-between bg-white">
+                <div >
+                  <img src={imgexpress} />
+                </div>
+                <div  className="text-color text-sm first:font-extrabold ">
+                  <p>
+                   ارسال فردا
+                  </p>
+                  <p className="flex items-center gap-1 flex-row-reverse mt-2 text-blue-500 font-vazir text-[0.8rem]">
+                  <FaLongArrowAltLeft/>
+                  <Modalexpress  name={"توضیحات بیشتر "}  />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-between mt-5 font-ycan text-sm text-color bg-[#fff3df] p-4 shadow border border-[#d8b67a] items-center rounded">
+              <div className="flex gap-1 flex-row-reverse items-center font-medium">
+                <Modalexpress2 name={"تحویل حصوری رایگان"}/>
+                <IoStorefrontSharp size={"1.3rem"} />
+              </div>
+              <div>
+                <FaChevronLeft />
+              </div>
+            </div>
+          </div>
+        )}
       </div>
+      {express && (
+        <div className="xl:hidden order-3 bg-white border p-3 py-5 rounded-xl shadow-xl mt-5">
+          <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   mt-5  font-ycan  bg-white border p-[2px] rounded shadow-xl">
+            <div className="flex flex-row-reverse p-5  justify-between bg-white">
+              <div>
+                <img src={imgexpress} />
+              </div>
+              <div className="text-color text-sm first:font-extrabold ">
+                <p>ارسال فردا</p>
+                <p className="flex items-center gap-1 flex-row-reverse mt-2 text-blue-500 font-vazir text-[0.8rem]">
+                  <FaLongArrowAltLeft />
+                  <Modalexpress  name={"توضیحات بیشتر "}  />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex justify-between mt-5 font-ycan text-sm text-color bg-[#fff3df] p-4 shadow border border-[#d8b67a] items-center rounded">
+            <div className="flex gap-1 flex-row-reverse items-center font-medium">
+            <Modalexpress2 name={"تحویل حصوری رایگان"}/>
+              <IoStorefrontSharp size={"1.3rem"} />
+            </div>
+            <div>
+              <FaChevronLeft />
+            </div>
+          </div>
+        </div>
+      )}
       {/* //add basket for moblile */}
       <div className="xl:hidden fixed bottom-0 text-color right-0 flex flex-col justify-center items-center gap-2 font-ycan shadow-lg border-t py-1 bg-[#f4f2f2] z-30 w-full">
         <div className="w-full flex justify-start gap-10 px-10 flex-row-reverse ">
-          <p className="text-red-600 font-extrabold">{digitsEnToFa(addCommas(price))} 
+          <p className="text-red-600 font-extrabold">
+            {digitsEnToFa(addCommas(price))}
             <span className="text-sm ms-1">تومان</span>
           </p>
           <p className="">
             {discount && (
               <>
-                <span className="line-through">{digitsEnToFa(addCommas(discount.price))}</span>
-                <span className="me-8 bg-red-600 text-white py- px-2 rounded font-light">{digitsEnToFa(discount.numberdis)}%</span>
+                <span className="line-through">
+                  {digitsEnToFa(addCommas(discount.price))}
+                </span>
+                <span className="me-8 bg-red-600 text-white py- px-2 rounded font-light">
+                  {digitsEnToFa(discount.numberdis)}%
+                </span>
               </>
             )}
           </p>
