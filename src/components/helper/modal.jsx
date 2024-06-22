@@ -8,22 +8,21 @@ import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import { TbBackground } from "react-icons/tb";
 import { PiHandWaving } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function AlertDialogSlide({ userinfo }) {
   const [open, setOpen] = React.useState(false);
-
+  const navigate = useNavigate();
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
     const getlocal = localStorage.getItem("useracount");
     if (getlocal) {
-  
       return;
     } else {
       const user = JSON.stringify(userinfo);
@@ -54,23 +53,33 @@ export default function AlertDialogSlide({ userinfo }) {
         aria-describedby="alert-dialog-slide-description"
       >
         <DialogContent>
-          <div style={{ fontFamily: "ycan" , display:'flex' , gap:'5px' , flexDirection:"row-reverse"}}>
-            <sapn style={{fontSize:'14px'}}>
-              <PiHandWaving style={{fontSize:"24px"}}/>
-            </sapn>{" "}
+          <div
+            style={{
+              fontFamily: "ycan",
+              display: "flex",
+              gap: "5px",
+              flexDirection: "row-reverse",
+            }}
+          >
+            <span style={{ fontSize: "14px" }}>
+              <PiHandWaving style={{ fontSize: "24px" }} />
+            </span>
             ثبت نام شما با موفقیت انجام شد
           </div>
         </DialogContent>
         <DialogActions>
           <div style={{ width: "100%", textAlign: "right" }}>
             <button
-              onClick={handleClose}
+              onClick={() => {
+                handleClose();
+                navigate("/");
+              }}
               style={{
                 backgroundColor: "#ff3557",
                 padding: "10px 10px ",
                 color: "white",
                 fontSize: "14px",
-                borderRadius:'10px'
+                borderRadius: "10px",
               }}
             >
               بازکشت
