@@ -6,17 +6,17 @@
 @layer components {
     /* //menu header styles in pc*/
     .menu-slide {
-        @apply flex items-center px-5 gap-4 text-[15px] flex-row-reverse text-color w-[350px] justify-end cursor-pointer
+        @apply flex items-center px-5 gap-4 text-[15px] flex-row-reverse text-color w-[350px] justify-end cursor-pointer;
     }
     .unde-slide-menu {
-        @apply hidden absolute right-[350px] -top-7 bg-blue-200 rounded-e-xl w-[320px] h-[450px] p-10 transition-all
+        @apply hidden absolute right-[350px] -top-7 bg-blue-200 rounded-e-xl w-[320px] h-[450px] p-10 transition-all;
     }
     .title-slide-menu {
-        @apply flex gap-2 items-center
+        @apply flex gap-2 items-center;
     }
     /* //menu user icnon in header */
     .menu-user {
-        @apply invisible opacity-0 absolute w-[300px] shadow-xl top-11 -left-1 bg-white z-20 rounded-xl py-4
+        @apply invisible opacity-0 absolute w-[300px] shadow-xl top-11 -left-1 bg-white z-20 rounded-xl py-4;
     }
 }
 
@@ -39,4 +39,12 @@ body {
 .menu-slide>span:nth-child(3) {
     font-size: 2rem;
     color: #60a5fa;
+}
+
+.text-color2 {
+    color: #b0882c;
+}
+
+.text-color3 {
+    color: #0f253d;
 }

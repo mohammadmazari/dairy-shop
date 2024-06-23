@@ -7,11 +7,8 @@ import Specialsale from "../components/content/Specialsale";
 import MenuHeader from "../components/content/MenuHeader";
 import Triple_banner from "../components/content/Triple_banner";
 import myproducts from "../products/products.json";
-import authvalidation from "../hooks/auth";
 export const Context = createContext();
-
 function Homepage() {
-
   const [products, setporducts] = useState(myproducts);
   return (
     <>

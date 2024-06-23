@@ -73,91 +73,93 @@ function Header() {
         <div className="flex  items-center gap-6 text-[25px]">
           {/* //user icon */}
           {tokenauth ? (
-            <div className="relative group/hoveractiv border p-2 rounded-xl shadow hover:cursor-pointer">
-              <div>
-                <PiUser />
-                <div className=" menu-user md:group-hover/hoveractiv:visible md:group-hover/hoveractiv:opacity-100">
-                  <ul className="[&_li]:flex [&_li]:items-center [&_li]:text-[15px] [&_li]:font-ycan [&_li]:flex-row-reverse [&_li]:justify-between [&_li]:p-4 [&_li]:text-gray-800 [&_li]:transition-all">
-                    <li className="hover:bg-gray-100 group/activ">
-                      <span>
-                        <FaAngleLeft
-                          size={"17px"}
-                          className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
-                        />
-                      </span>
-                      <span>
-                        <p className="inline-block">حساب کاربری</p>
-                        <span className="text-[10px] ms-1">مشتری گرامی</span>
-                      </span>
-                    </li>
-                    <li className="hover:bg-gray-100 group/activ border-b ">
-                      <span>
-                        <FaAngleLeft
-                          size={"17px"}
-                          className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
-                        />
-                      </span>
-                      <span>ویرایش اطلاعات فردی</span>
-                    </li>
-                    <li className="hover:bg-gray-100 flex ">
-                      <span className="flex items-center gap-1">
-                        <span>{digitsEnToFa(addCommas(1000))}</span>
-                        <span>تومان</span>
-                      </span>
-                      <span className="flex items-center gap-2">
+            <Link to="/profile">
+              <div className="relative group/hoveractiv border p-2 rounded-xl shadow hover:cursor-pointer">
+                <div>
+                  <PiUser />
+                  <div className=" menu-user md:group-hover/hoveractiv:visible md:group-hover/hoveractiv:opacity-100">
+                    <ul className="[&_li]:flex [&_li]:items-center [&_li]:text-[15px] [&_li]:font-ycan [&_li]:flex-row-reverse [&_li]:justify-between [&_li]:p-4 [&_li]:text-gray-800 [&_li]:transition-all">
+                      <li className="hover:bg-gray-100 group/activ">
                         <span>
-                          <MdPayment size={"25px"} />
+                          <FaAngleLeft
+                            size={"17px"}
+                            className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
+                          />
                         </span>
-                        <span>کیف پول</span>
-                      </span>
-                    </li>
-                    <li className="hover:bg-gray-100 group/activ">
-                      <span>
-                        <FaAngleLeft
-                          size={"17px"}
-                          className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
-                        />
-                      </span>
-                      <span className="flex items-center gap-2">
                         <span>
-                          <AiOutlineLike size={"25px"} />
+                          <p className="inline-block">حساب کاربری</p>
+                          <span className="text-[10px] ms-1">مشتری گرامی</span>
                         </span>
-                        <span> لیست علاقه مندی</span>
-                      </span>
-                    </li>
-                    <li className="hover:bg-gray-100 group/activ">
-                      <span>
-                        <FaAngleLeft
-                          size={"17px"}
-                          className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
-                        />
-                      </span>
-                      <span className="flex items-center gap-2">
+                      </li>
+                      <li className="hover:bg-gray-100 group/activ border-b ">
                         <span>
-                          <CiShoppingBasket size={"25px"} />
+                          <FaAngleLeft
+                            size={"17px"}
+                            className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
+                          />
                         </span>
-                        <span> سفارش های من</span>
-                      </span>
-                    </li>
-                    <li
-                      className="hover:bg-gray-100"
-                      onClick={() => {
-                        localStorage.removeItem("useracount");
-                        settokenauth(authvalidation("useracount"))
-                      }}
-                    >
-                      <span></span>
-                      <span className="flex items-center gap-2">
+                        <span>ویرایش اطلاعات فردی</span>
+                      </li>
+                      <li className="hover:bg-gray-100 flex ">
+                        <span className="flex items-center gap-1">
+                          <span>{digitsEnToFa(addCommas(1000))}</span>
+                          <span>تومان</span>
+                        </span>
+                        <span className="flex items-center gap-2">
+                          <span>
+                            <MdPayment size={"25px"} />
+                          </span>
+                          <span>کیف پول</span>
+                        </span>
+                      </li>
+                      <li className="hover:bg-gray-100 group/activ">
                         <span>
-                          <IoIosLogOut size={"25px"} />
+                          <FaAngleLeft
+                            size={"17px"}
+                            className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
+                          />
                         </span>
-                        <span> خروج از حساب کاربری</span>
-                      </span>
-                    </li>
-                  </ul>
+                        <span className="flex items-center gap-2">
+                          <span>
+                            <AiOutlineLike size={"25px"} />
+                          </span>
+                          <span> لیست علاقه مندی</span>
+                        </span>
+                      </li>
+                      <li className="hover:bg-gray-100 group/activ">
+                        <span>
+                          <FaAngleLeft
+                            size={"17px"}
+                            className=" group-hover/activ:text-blue-500 group-hover/activ:-translate-x-1"
+                          />
+                        </span>
+                        <span className="flex items-center gap-2">
+                          <span>
+                            <CiShoppingBasket size={"25px"} />
+                          </span>
+                          <span> سفارش های من</span>
+                        </span>
+                      </li>
+                      <li
+                        className="hover:bg-gray-100"
+                        onClick={() => {
+                          localStorage.removeItem("useracount");
+                          settokenauth(authvalidation("useracount"));
+                        }}
+                      >
+                        <span></span>
+                        <span className="flex items-center gap-2">
+                          <span>
+                            <IoIosLogOut size={"25px"} />
+                          </span>
+                          <span> خروج از حساب کاربری</span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ) : (
             <Link to="/auth">
               <div className="font-ycan text-[1rem] border border-[#e1d0b8] rounded-md py-[10px] px-7   text-gray-500 font-medium">
