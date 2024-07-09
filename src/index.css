@@ -48,3 +48,10 @@ body {
 .text-color3 {
     color: #0f253d;
 }
+
+.active {
+    background-color: white;
+    margin-right: 10px;
+    border-left: white;
+    z-index: 10;
+}

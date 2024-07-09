@@ -6,7 +6,7 @@ const uselocalstoreage = (key, intitionavalue) => {
         return localstate ? JSON.parse(localstate) : intitionavalue;
     });
     useEffect(() => {
-        localStorage.setItem(key, JSON.stringify(value));
+        localStorage.setItem(key, JSON.stringify(value).toLowerCase());
     }, [value]);
     return [value, setvalue];
 };

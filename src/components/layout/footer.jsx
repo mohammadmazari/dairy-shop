@@ -3,7 +3,6 @@ import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
 import { MdOutlineKeyboardArrowUp } from "react-icons/md";
 import { SiInstagram } from "react-icons/si";
 import { RiTelegramFill } from "react-icons/ri";
@@ -13,7 +12,7 @@ import img1 from "../../../public/image/footer/download.svg";
 import img2 from "../../../public/image/footer/c5.webp";
 import img3 from "../../../public/image/footer/c4.webp";
 import { animateScroll as scroll } from "react-scroll";
-
+import { Link } from "react-router-dom";
 function Footer() {
   const scrollToTop = () => {
     scroll.scrollToTop({ smooth: "easeInOutQuad" });
@@ -22,9 +21,11 @@ function Footer() {
     <div className=" relative overflow-hidden bg-[#0c283f] text-white rounded-xl p-2 md:p-5 font-ycan mt-10 font-normal text-[0.7rem] md:text-[1rem]">
       <div className="flex justify-between mt-4 pb-10 border-b border-gray-400">
         <div>
-          <p className="bg-white rounded-md text-blue-400  p-3 font-medium px-10">
-            دیری شاپ
-          </p>
+          <Link to="/">
+            <p className="bg-white rounded-md text-blue-400  p-3 font-medium px-10">
+              دیری شاپ
+            </p>
+          </Link>
         </div>
         <div>
           <button

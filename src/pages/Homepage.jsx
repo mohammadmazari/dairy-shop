@@ -14,22 +14,19 @@ function Homepage() {
     <>
       <div className="p-2 ">
         <Context.Provider value={products}>
- 
-            <Header />
-            {/* menu */}
-            <MenuHeader />
-            {/* slider baner */}
-            <Slider />
-            {/* slider category */}
-            <Categoryslider />
-            <br />
-            {/* special sale */}
-            <Specialsale />
-            {/* triple banner */}
-            <Triple_banner />
+          <Header />
+          {/* menu */}
+          <MenuHeader />
+          {/* slider baner */}
+          <Slider />
+          {/* slider category */}
+          <Categoryslider />
+          <br />
+          {/* special sale */}
+          <Specialsale />
+          {/* triple banner */}
+          <Triple_banner />
           <Footer />
-   
-
         </Context.Provider>
       </div>
     </>
