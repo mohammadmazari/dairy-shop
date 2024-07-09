@@ -9,13 +9,13 @@ function Profile() {
   useEffect(() => {
     const validaion = authvalidation("useracount");
     if (!validaion) {
-      navigate("/");
+      navigate("/auth");
     }
     document.title = "حساب کاربری";
   });
   // info user from localstorage
   const [info, setinfo] = useState(() => {
-    const infouser = JSON.parse(localStorage.getItem("useracount").toLowerCase());
+    const infouser = JSON.parse(localStorage.getItem("useracount"));
     return infouser ? infouser : '';
   });
   return (
