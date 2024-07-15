@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { digitsEnToFa } from "persian-tools";
 import { IoCheckmarkDoneSharp } from "react-icons/io5";
 import { IoMdShare } from "react-icons/io";
@@ -19,7 +19,11 @@ import { Pagination } from "swiper/modules";
 import imgexpress from "../../../public/image/expres.svg";
 import Modalexpress2 from "../helper/Modalexpress2";
 import Modalexpress from "../helper/Modalexpress";
+
+import { Cart } from "../../App";
+import Modaladcart from "../helper/Modaladcart";
 function Infoproduct({ product }) {
+  const { cart, setcart } = useContext(Cart);
   const {
     id,
     name,
@@ -39,8 +43,14 @@ function Infoproduct({ product }) {
       setselectedcolor(e.target.parentElement.dataset.color);
     }
   };
+  // add to cart hander
+  const addtocarthander = () => {
+    const newcart = [...cart, product.id];
+    setcart([...new Set(newcart)]);
+  };
+
   return (
-    <div className="flex flex-col p-2 xl:p-5 xl:flex-row justify-between gap-2">
+    <div className="flex flex-col p-2 xl:p-5 xl:flex-row justify-between gap-2 ">
       {/* //title product */}
       <div className="w-[100%] xl:w-[40%] order-2 xl:order-1">
         <div>
@@ -183,7 +193,7 @@ function Infoproduct({ product }) {
 
       {/* //add basket */}
       <div className=" w-[30%] -600 p-5  order-3 xl:order-3 hidden xl:inline-block">
-        <div className="flex flex-col font-ycan font-medium  text-gray-600 gap-10 bg-white border p-3 py-5 rounded-xl shadow-xl">
+        <div className="flex flex-col font-ycan  font-medium  text-gray-600 gap-10 bg-white border p-3 py-5 rounded-xl shadow-xl">
           <div className="bg-[#f2f8fd] p-3 flex [&_p]:flex [&_p]:items-center [&_p]:gap-3 gap-6 flex-col gap-4">
             <p>
               <span>
@@ -208,43 +218,47 @@ function Infoproduct({ product }) {
           </div>
           <div>
             {discount && (
-              <p className="flex justify-between flex-row-reverse px-10">
+              <p className="flex justify-between flex-row-reverse px-5 ">
                 <span className="text-red-500 font-extrabold">
                   {digitsEnToFa(addCommas(price))}
                   <span className="text-[12px] ms-1">تومان</span>
                 </span>
                 <span className="line-through">
-                  {digitsEnToFa(discount.price)}
+                  {digitsEnToFa(addCommas(discount.price))}
+                  <span className="text-[12px] ms-1">تومان</span>
                 </span>
               </p>
             )}
           </div>
-          <button className="bg-[#009a32] text-white rounded-md flex p-3 justify-center items-center gap-5">
-            افزودن به سبد خرید <HiOutlineShoppingCart size={"20px"} />
-          </button>
+          <Modaladcart
+            onClick={() => {
+              addtocarthander();
+              console.log("kos");
+            }}
+            className="bg-[#009a32] text-white rounded-md flex p-3 justify-center items-center gap-5"
+            id={product.id}
+          ></Modaladcart>
         </div>
         {/* //express send */}
         {express && (
           <div className=" bg-white border p-3 py-5 rounded-xl shadow-xl mt-5">
             <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   mt-5  font-ycan  bg-white border p-[2px] rounded shadow-xl">
               <div className="flex flex-row-reverse p-5  justify-between bg-white">
-                <div >
+                <div>
                   <img src={imgexpress} />
                 </div>
-                <div  className="text-color text-sm first:font-extrabold ">
-                  <p>
-                   ارسال فردا
-                  </p>
+                <div className="text-color text-sm first:font-extrabold ">
+                  <p>ارسال فردا</p>
                   <p className="flex items-center gap-1 flex-row-reverse mt-2 text-blue-500 font-vazir text-[0.8rem]">
-                  <FaLongArrowAltLeft/>
-                  <Modalexpress  name={"توضیحات بیشتر "}  />
+                    <FaLongArrowAltLeft />
+                    <Modalexpress name={"توضیحات بیشتر "} />
                   </p>
                 </div>
               </div>
             </div>
             <div className="flex justify-between mt-5 font-ycan text-sm text-color bg-[#fff3df] p-4 shadow border border-[#d8b67a] items-center rounded">
               <div className="flex gap-1 flex-row-reverse items-center font-medium">
-                <Modalexpress2 name={"تحویل حصوری رایگان"}/>
+                <Modalexpress2 name={"تحویل حصوری رایگان"} />
                 <IoStorefrontSharp size={"1.3rem"} />
               </div>
               <div>
@@ -265,14 +279,14 @@ function Infoproduct({ product }) {
                 <p>ارسال فردا</p>
                 <p className="flex items-center gap-1 flex-row-reverse mt-2 text-blue-500 font-vazir text-[0.8rem]">
                   <FaLongArrowAltLeft />
-                  <Modalexpress  name={"توضیحات بیشتر "}  />
+                  <Modalexpress name={"توضیحات بیشتر "} />
                 </p>
               </div>
             </div>
           </div>
           <div className="flex justify-between mt-5 font-ycan text-sm text-color bg-[#fff3df] p-4 shadow border border-[#d8b67a] items-center rounded">
             <div className="flex gap-1 flex-row-reverse items-center font-medium">
-            <Modalexpress2 name={"تحویل حصوری رایگان"}/>
+              <Modalexpress2 name={"تحویل حصوری رایگان"} />
               <IoStorefrontSharp size={"1.3rem"} />
             </div>
             <div>
@@ -302,7 +316,12 @@ function Infoproduct({ product }) {
           </p>
         </div>
         <div className="w-full">
-          <button className="bg-[#009a32] w-full text-white rounded-md flex p-3 justify-center items-center gap-5">
+          <button
+            onClick={() => {
+              addtocarthander();
+            }}
+            className="bg-[#009a32] w-full text-white rounded-md flex p-3 justify-center items-center gap-5"
+          >
             افزودن به سبد خرید <HiOutlineShoppingCart size={"20px"} />
           </button>
         </div>

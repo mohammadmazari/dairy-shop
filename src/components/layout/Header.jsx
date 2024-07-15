@@ -13,11 +13,15 @@ import { MdPayment } from "react-icons/md";
 import { digitsEnToFa, addCommas } from "persian-tools";
 import { Link } from "react-router-dom";
 import authvalidation from "../../hooks/auth";
+import allproducts from "../../components/helper/allproducts";
+import { Cart } from "../../App";
 function Header() {
+  const { cart, setcart } = useContext(Cart);
   const [tokenauth, settokenauth] = useState();
   useEffect(() => {
     settokenauth(authvalidation("useracount"));
   }, []);
+
   return (
     <>
       {/* //responsev mobile */}
@@ -32,10 +36,10 @@ function Header() {
             </h1>
           </Link>
         </div>
-        <Link to="/profile">  
-        <div className="text-[25px] border p-2 rounded-xl shadow ">
-          <LuUser2 />
-        </div>
+        <Link to="/profile">
+          <div className="text-[25px] border p-2 rounded-xl shadow ">
+            <LuUser2 />
+          </div>
         </Link>
       </div>
       {/* row2 */}
@@ -71,7 +75,7 @@ function Header() {
           <CiSearch className=" absolute top-4 right-3 text-color" />
         </div>
         {/* //basket and user */}
-        <div className="flex  items-center gap-6 text-[25px]">
+        <div className="flex items-center gap-6 text-[25px]">
           {/* //user icon */}
           {tokenauth ? (
             <div className="relative group/hoveractiv border rounded-xl shadow hover:cursor-pointer">
@@ -183,9 +187,37 @@ function Header() {
           {/* shop icon */}
           <div className="relative group/hoveractiv border p-2 rounded-xl shadow hover:cursor-pointer ">
             <PiShoppingCartLight />
-            <div className=" invisible group-hover/hoveractiv:visible group-hover/hoveractiv:opacity-100 opacity-0 absolute top-12 transition-all left-0 rounded shadow-xl p-3 text-[15px] w-[200px] font-ycan  font-thin">
+            <div className="invisible  opacity-0 group-hover/hoveractiv:visible group-hover/hoveractiv:opacity-100  absolute top-12 transition-all left-[10px] rounded shadow-xl p-3 text-[15px] w-[350px] h-[450px] overflow-auto  text-center font-ycan z-30 bg-white font-thin">
               <div>
-                <p>سبد خرید شما خالی است ! </p>
+                <ul>
+                  {cart ? (
+                    cart.map((c) =>
+                      allproducts.map((p) => {
+                        if (c === p.id) {
+                          return (
+                            <li
+                              key={p.id}
+                              className="flex justify-center items-center font-extrabold text-gray-600 h-[80px] gap-2 text-[0.7rem] w-full border-b border-gray-300 "
+                            >
+                              <p className="w-[70px]">
+                                <img src={p.image} />
+                              </p>
+                              <p className="w-[180px]">{p.name}</p>
+                              <p className="text-red-500 ">
+                                <span>{digitsEnToFa(addCommas(p.price))}</span>
+                                <span className="text-[0.5rem] ms-1">
+                                  تومان
+                                </span>
+                              </p>
+                            </li>
+                          );
+                        }
+                      })
+                    )
+                  ) : (
+                    <li className=" bg-red-50 w-full h-[100px]">سبد خرید شما خالی است</li>
+                  )}
+                </ul>
               </div>
             </div>
           </div>
