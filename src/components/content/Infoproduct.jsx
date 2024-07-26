@@ -6,7 +6,6 @@ import { RiMessage3Line } from "react-icons/ri";
 import { FaBalanceScaleLeft } from "react-icons/fa";
 import { LuBadgeAlert } from "react-icons/lu";
 import { PiHeartLight } from "react-icons/pi";
-import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { IoStorefront } from "react-icons/io5";
 import { MdOutlineCreditScore } from "react-icons/md";
 import { GrStatusGood } from "react-icons/gr";
@@ -19,11 +18,14 @@ import { Pagination } from "swiper/modules";
 import imgexpress from "../../../public/image/expres.svg";
 import Modalexpress2 from "../helper/Modalexpress2";
 import Modalexpress from "../helper/Modalexpress";
-
-import { Cart } from "../../App";
+import { HiOutlineShoppingCart } from "react-icons/hi2";
 import Modaladcart from "../helper/Modaladcart";
+import AlertMassage from "../helper/AlertMassage";
+import { Cart } from "../../App";
 function Infoproduct({ product }) {
   const { cart, setcart } = useContext(Cart);
+  //color product
+  const [color, setcolor] = useState(false);
   const {
     id,
     name,
@@ -37,22 +39,18 @@ function Infoproduct({ product }) {
   } = product;
   const [selected, setselected] = useState();
   const [selectedcolor, setselectedcolor] = useState();
-  const selectedhandler = (e) => {
+  const selectedhandler = (e, self) => {
+    setcolor(self);
     if (e.target.tagName === "SPAN") {
       setselected(e.target.parentElement.dataset.name);
       setselectedcolor(e.target.parentElement.dataset.color);
     }
   };
-  // add to cart hander
-  const addtocarthander = () => {
-    const newcart = [...cart, product.id];
-    setcart([...new Set(newcart)]);
-  };
 
   return (
-    <div className="flex flex-col p-2 xl:p-5 xl:flex-row justify-between gap-2 ">
+    <div className="flex flex-col p-2 xl:p-5 md:flex-row justify-between gap-2 ">
       {/* //title product */}
-      <div className="w-[100%] xl:w-[40%] order-2 xl:order-1">
+      <div className="w-[100%] md:max-w-[40%] order-2 md:order-1 xl:order-1">
         <div>
           <p className="text-sm xl:text-md font-ycan text-color font-extrabold ">
             {name}
@@ -75,7 +73,7 @@ function Infoproduct({ product }) {
                     data-name={index}
                     data-color={item.name}
                     onClick={(e) => {
-                      selectedhandler(e);
+                      selectedhandler(e, { name: item.name, code: item.code });
                     }}
                     key={item.name}
                     style={
@@ -119,7 +117,7 @@ function Infoproduct({ product }) {
       </div>
 
       {/* //imgages product */}
-      <div className="font-ycan flex flex-col order-1 xl:order-2 items-center justify-center w-[100%] xl:w-[30%]">
+      <div className="font-ycan flex flex-col order-1 md:order-2 xl:order-2 items-center justify-center w-[100%] md:max-w-[30%]">
         {/* //icons header */}
         <div>
           <div>
@@ -192,8 +190,8 @@ function Infoproduct({ product }) {
       </div>
 
       {/* //add basket */}
-      <div className=" w-[30%] -600 p-5  order-3 xl:order-3 hidden xl:inline-block">
-        <div className="flex flex-col font-ycan  font-medium  text-gray-600 gap-10 bg-white border p-3 py-5 rounded-xl shadow-xl">
+      <div className="hidden lg:inline-block w-[30%]  lg:h-fit p-5  order-3 md:order-3 ">
+        <div className="flex flex-col font-ycan  font-medium  text-gray-600 gap-10 bg-white border md:h-[400px] p-3 py-5 rounded-xl shadow-xl">
           <div className="bg-[#f2f8fd] p-3 flex [&_p]:flex [&_p]:items-center [&_p]:gap-3 gap-6 flex-col gap-4">
             <p>
               <span>
@@ -230,18 +228,30 @@ function Infoproduct({ product }) {
               </p>
             )}
           </div>
-          <Modaladcart
-            onClick={() => {
-              addtocarthander();
-              console.log("kos");
-            }}
-            className="bg-[#009a32] text-white rounded-md flex p-3 justify-center items-center gap-5"
-            id={product.id}
-          ></Modaladcart>
+          {product.colors && color ? (
+            <div>
+              <Modaladcart
+                className="bg-[#009a32] text-white rounded-md flex p-3 justify-center items-center gap-5"
+                id={product}
+                color={color}
+              ></Modaladcart>
+            </div>
+          ) : (
+            <AlertMassage>
+              <button className="bg-[#009a32] w-[100%] text-white rounded-md flex p-3 justify-center items-center gap-5">
+                افزودن به سبد خرید
+                <HiOutlineShoppingCart size={"20px"} />
+              </button>
+              <span className="font-ycan p-3 text-sm">
+                لطفا رنگ محصول مورد نظر را وارد کنید
+              </span>
+              <span>توجه</span>
+            </AlertMassage>
+          )}
         </div>
         {/* //express send */}
         {express && (
-          <div className=" bg-white border p-3 py-5 rounded-xl shadow-xl mt-5">
+          <div className=" bg-white border p-3 py-5 rounded-xl shadow-xl mt-5 h-fit">
             <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   mt-5  font-ycan  bg-white border p-[2px] rounded shadow-xl">
               <div className="flex flex-row-reverse p-5  justify-between bg-white">
                 <div>
@@ -269,7 +279,7 @@ function Infoproduct({ product }) {
         )}
       </div>
       {express && (
-        <div className="xl:hidden order-3 bg-white border p-3 py-5 rounded-xl shadow-xl mt-5">
+        <div className="lg:hidden order-3 bg-white border p-3 py-5 rounded-xl shadow-xl mt-5">
           <div className=" bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500   mt-5  font-ycan  bg-white border p-[2px] rounded shadow-xl">
             <div className="flex flex-row-reverse p-5  justify-between bg-white">
               <div>
@@ -296,7 +306,7 @@ function Infoproduct({ product }) {
         </div>
       )}
       {/* //add basket for moblile */}
-      <div className="xl:hidden fixed bottom-0 text-color right-0 flex flex-col justify-center items-center gap-2 font-ycan shadow-lg border-t py-1 bg-[#f4f2f2] z-30 w-full">
+      <div className="lg:hidden fixed bottom-0 text-color right-0 flex flex-col justify-center items-center gap-2 font-ycan shadow-lg border-t py-1 bg-[#f4f2f2] z-30 w-full">
         <div className="w-full flex justify-start gap-10 px-10 flex-row-reverse ">
           <p className="text-red-600 font-extrabold">
             {digitsEnToFa(addCommas(price))}
@@ -316,14 +326,27 @@ function Infoproduct({ product }) {
           </p>
         </div>
         <div className="w-full">
-          <button
-            onClick={() => {
-              addtocarthander();
-            }}
-            className="bg-[#009a32] w-full text-white rounded-md flex p-3 justify-center items-center gap-5"
-          >
-            افزودن به سبد خرید <HiOutlineShoppingCart size={"20px"} />
-          </button>
+          {product.colors && color ? (
+            <div>
+              <Modaladcart
+                className="bg-[#009a32] text-white rounded-md flex p-3 justify-center items-center gap-5"
+                id={product}
+                color={color}
+              ></Modaladcart>
+            </div>
+          ) : (
+            <AlertMassage>
+              <button className="bg-[#009a32] w-[100%] text-white rounded-md text-[15px] flex p-3 justify-center items-center gap-5">
+                افزودن به سبد خرید
+                <HiOutlineShoppingCart size={"20px"} />
+              </button>
+              <span className="font-ycan p-3 text-sm">
+                لطفا رنگ محصول مورد نظر را وارد کنید
+              </span>
+              <span>توجه</span>
+            </AlertMassage>
+          )}
+          {/* <Modaladcart id={product}></Modaladcart> */}
         </div>
       </div>
     </div>

@@ -185,42 +185,46 @@ function Header() {
             </Link>
           )}
           {/* shop icon */}
-          <div className="relative group/hoveractiv border p-2 rounded-xl shadow hover:cursor-pointer ">
-            <PiShoppingCartLight />
-            <div className="invisible  opacity-0 group-hover/hoveractiv:visible group-hover/hoveractiv:opacity-100  absolute top-12 transition-all left-[10px] rounded shadow-xl p-3 text-[15px] w-[350px] h-[450px] overflow-auto  text-center font-ycan z-30 bg-white font-thin">
-              <div>
-                <ul>
-                  {cart ? (
-                    cart.map((c) =>
-                      allproducts.map((p) => {
-                        if (c === p.id) {
-                          return (
-                            <li
-                              key={p.id}
-                              className="flex justify-center items-center font-extrabold text-gray-600 h-[80px] gap-2 text-[0.7rem] w-full border-b border-gray-300 "
-                            >
-                              <p className="w-[70px]">
-                                <img src={p.image} />
-                              </p>
-                              <p className="w-[180px]">{p.name}</p>
-                              <p className="text-red-500 ">
-                                <span>{digitsEnToFa(addCommas(p.price))}</span>
-                                <span className="text-[0.5rem] ms-1">
-                                  تومان
-                                </span>
-                              </p>
-                            </li>
-                          );
-                        }
-                      })
-                    )
-                  ) : (
-                    <li className=" bg-red-50 w-full h-[100px]">سبد خرید شما خالی است</li>
-                  )}
-                </ul>
+          <Link to="/cart">
+            <div className="relative group/hoveractiv border p-2 rounded-xl shadow hover:cursor-pointer ">
+              <PiShoppingCartLight />
+              <div className="invisible  opacity-0 group-hover/hoveractiv:visible group-hover/hoveractiv:opacity-100 scroll-none absolute top-12 transition-all left-0 rounded shadow-xl p-3 text-[15px] max-w-[350px] max-h-[450px] overflow-auto  text-center font-ycan z-30 bg-white font-thin">
+                <div>
+                  <ul>
+                    {cart.length > 0 ? (
+                      cart.map((c) =>
+                        allproducts.map((p) => {
+                          if (c.id === p.id) {
+                            return (
+                              <li
+                                key={p.id}
+                                className="flex justify-center items-center font-extrabold text-gray-600 h-[80px] gap-2 text-[0.7rem] w-full border-b border-gray-300 "
+                              >
+                                <p className="w-[70px]">
+                                  <img src={p.image} />
+                                </p>
+                                <p className="w-[180px]">{p.name}</p>
+                                <p className="text-red-500 ">
+                                  <span>
+                                    {digitsEnToFa(addCommas(p.price))}
+                                  </span>
+                                  <span className="text-[0.5rem] ms-1">
+                                    تومان
+                                  </span>
+                                </p>
+                              </li>
+                            );
+                          }
+                        })
+                      )
+                    ) : (
+                      <li className="w-[200px]">سبد خرید شما خالی است</li>
+                    )}
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
     </>

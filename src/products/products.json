@@ -68,6 +68,11 @@
                     "price": 4800000,
                     "numberdis": 8
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" }
+                   
+                ],
                 "info": [{
                         "name": "نوع پردازنده - CPU",
                         "about": "MediaTek Helio G36 (12nm)"
@@ -160,6 +165,10 @@
                     "price": 850000,
                     "numberdis": 3
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" }
+            
+                ],
                 "info": [{
                         "name": "حافظه داخلی :",
                         "about": "ندارد "
@@ -250,6 +259,11 @@
                     "price": 48000000,
                     "numberdis": 3
                 },
+                "colors": [
+                    { "name": "مشکی", "code": "#1a1a1a" },
+                    { "name": "نقره ای", "code": "#cfcfcf" },
+                    { "name": "زرد", "code": "#d3ce35" }
+                ],
                 "info": [{
                         "name": "ابعاد نمایشگر :",
                         "about": "15.6 اینچ"

@@ -5,9 +5,7 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import { useState } from "react";
 import Slide from "@mui/material/Slide";
-import { BsPatchCheck } from "react-icons/bs";
 import { IoIosCloseCircleOutline } from "react-icons/io";
-
 import { useNavigate } from "react-router-dom";
 import { HiOutlineShoppingCart } from "react-icons/hi2";
 import { Cart } from "../../App";
@@ -15,20 +13,27 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function Modaladcart({id}) {
+export default function Modaladcart({ id, color }) {
   const [isshow, setisshow] = useState(false);
   const [open, setOpen] = React.useState(false);
-  const {cart,setcart } = React.useContext(Cart);
+  const { cart, setcart } = React.useContext(Cart);
   const handleClickOpen = () => {
     setOpen(true);
     setisshow(true);
-    const newcart = [...cart , id]
-    setcart([...new Set(newcart)])
+    const newcart = [...cart, id];
+    const newp = newcart.map((item) => {
+      return {
+        ...item,
+        total: item.total || 1,
+        selectedcolor: item.selectedcolor || color,
+      };
+    });
+    setcart([...new Set(newp)]);
   };
   const handleClose = () => {
     setOpen(false);
   };
-
+  const navigate = useNavigate();
   return (
     <React.Fragment>
       {!isshow ? (
@@ -55,8 +60,8 @@ export default function Modaladcart({id}) {
           style={{
             fontFamily: "ycan",
             width: "100%",
-            color:"#2ca528",
-            fontWeight:'bold',
+            color: "#2ca528",
+            fontWeight: "bold",
             padding: "0.5rem",
             fontSize: "15px",
             fontWeight: "extrabold",
@@ -64,11 +69,13 @@ export default function Modaladcart({id}) {
             display: "flex",
             gap: "10px",
             alignItems: "center",
-            borderRadius:"10px"
+            borderRadius: "10px",
           }}
-          // onClick={handleClickOpen}
+          onClick={() => {
+            navigate("/cart");
+          }}
         >
-         مشاهده سبد خرید
+          مشاهده سبد خرید
           <HiOutlineShoppingCart size={"20px"} />
         </Button>
       )}
@@ -88,12 +95,12 @@ export default function Modaladcart({id}) {
             style={{
               fontFamily: "ycan",
               display: "flex",
-              gap: "100px",
               flexDirection: "row-reverse",
               color: "green",
               paddingBottom: "15px",
               borderBottom: "1px solid #c7c2c3",
             }}
+            className="gap-2 md:gap-16"
           >
             <span
               style={{ fontSize: "14px", cursor: "pointer" }}
@@ -103,7 +110,9 @@ export default function Modaladcart({id}) {
                 style={{ fontSize: "24px", color: "gray" }}
               />
             </span>
-            کالا به سبد خرید شما افزوده شد
+            <p className="text-[0.8rem] w-[350px] md:w-full md:text-sm">
+              کالا به سبد خرید شما افزوده شد
+            </p>
           </div>
         </DialogContent>
         <DialogActions>
@@ -111,6 +120,7 @@ export default function Modaladcart({id}) {
             <button
               onClick={() => {
                 handleClose();
+                navigate("/cart");
               }}
               style={{
                 borderRadius: "20px",
@@ -118,7 +128,6 @@ export default function Modaladcart({id}) {
                 width: "100%",
                 textAlign: "center",
                 padding: "10px 10px ",
-
                 fontSize: "14px",
                 borderRadius: "10px",
               }}

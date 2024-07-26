@@ -12,6 +12,7 @@ import Page404 from "./pages/404";
 import Notifications from "./pages/profile/Notifications";
 import RecentlyVisited from "./pages/profile/RecentlyVisited";
 import uselocalstoreage from "./hooks/uselocalstorage";
+import Cartpage from "./pages/Cartpage";
 export const Cart = createContext();
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
             <Route path="/my-addresses" element={<Myaddresses />} />
             <Route path="/notifications" element={<Notifications />} />
             <Route path="/recently-visited" element={<RecentlyVisited />} />
+            <Route path="/cart" element={<Cartpage/>}/>
             <Route path="*" element={<Page404 />} />
           </Routes>
         </Cart.Provider>
