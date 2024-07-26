@@ -22,7 +22,7 @@ export default function Categoryslider() {
   return (
     <>
       <Swiper
-        slidesPerView={7}
+        slidesPerView={12}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
@@ -31,13 +31,13 @@ export default function Categoryslider() {
         className="mySwiper-sedound h-[160px] md:h-[230px] relative px-5 mb-[10px]"
         breakpoints={{
           100: {
-            slidesPerView: 2,
-          },
-          400: {
             slidesPerView: 3,
           },
-          600: {
+          400: {
             slidesPerView: 4,
+          },
+          600: {
+            slidesPerView: 5,
           },
           700: {
             slidesPerView: 5,
@@ -52,7 +52,7 @@ export default function Categoryslider() {
         }}
       >
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]   flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]   flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img1}
@@ -60,12 +60,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>اسپیکر</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">اسپیکر</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img2}
@@ -73,12 +73,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>لپتاپ</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">لپتاپ</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img3}
@@ -86,12 +86,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>لوازم جانبی</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">لوازم جانبی</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img4}
@@ -99,12 +99,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>ساعت هوشمند</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">ساعت هوشمند</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img5}
@@ -112,12 +112,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>تلفن همراه</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">تلفن همراه</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img6}
@@ -125,12 +125,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>گیمینگ</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">گیمینگ</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img7}
@@ -138,12 +138,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>لوازم خانگی</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">لوازم خانگی</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img8}
@@ -151,12 +151,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>ماشین های اداری</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">ماشین های اداری</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img9}
@@ -164,12 +164,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>لوازم جانبی موبایل</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">لوازم جانبی موبایل</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img10}
@@ -177,12 +177,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>تبلت</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">تبلت</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img11}
@@ -190,12 +190,12 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>هدفون</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">هدفون</p>
             </div>
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="w-[140px] h-[150px] md:w-[160px] md:h-[200px]  flex flex-col gap-5">
+          <div className="w-[80px] h-[110px] md:w-[120px] md:h-[160px]  flex flex-col gap-5">
             <div className="img-header h-4/6 flex justify-center mt-5 ">
               <img
                 src={img12}
@@ -203,7 +203,7 @@ export default function Categoryslider() {
               />
             </div>
             <div className="info font-ycan font-medium text-color text-center">
-              <p>پاور بانک</p>
+              <p className="text-[0.6rem] font-extrabold md:text-[0.8rem]">پاور بانک</p>
             </div>
           </div>
         </SwiperSlide>

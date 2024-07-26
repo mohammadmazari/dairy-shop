@@ -36,6 +36,7 @@ function Cartpage() {
     cart.map((item) => {
       if (item.id === id) {
         setcart(newp);
+        
       }
     });
   };
@@ -54,11 +55,12 @@ function Cartpage() {
   const deletehandler = (id) => {
     const newp = cart.filter((item) => item.id != id);
     setcart(newp);
+    setnewcart([])
   };
   const navigate = useNavigate();
   return (
-    <div>
-      <Header />
+    <div className="px-3 mt-1">
+      <Header/>
       <MenuHeader />
       {newcart.length > 0 ? (
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-0">
@@ -139,13 +141,13 @@ function Cartpage() {
                               </div>
                             )}
                             <div className="flex items-center ">
-                              <p className="text-red-600 text-[0.6rem] md:text-[0.9rem] font-extrabold">
+                              <p className="text-red-600 text-[0.8rem] md:text-[0.9rem] font-extrabold">
                                 <span>
                                   {digitsEnToFa(
                                     addCommas(item.total * item.price)
                                   )}
                                 </span>
-                                <span className="ms-1 text-[0.5rem] md:text-[0.8rem]">
+                                <span className="ms-1 text-[0.7rem] md:text-[0.8rem]">
                                   تومان
                                 </span>
                               </p>

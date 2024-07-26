@@ -32,7 +32,7 @@ export default function Modalexpress2({ name }) {
               <IoIosCloseCircleOutline size={"25px"} />
             </button>
           </div>
-            <p className="text-[0.5rem] sm:text-sm px-2 sm:px-10 py-10 font-extralight">
+            <p className="text-[0.7rem] sm:text-sm px-2 sm:px-10 py-10 font-extralight">
               شما می‌توانید علاوه بر اینکه سفارش‌های خود را در محل موردنظرتان
               تحویل بگیرید، این امکان فراهم است که سفارش‌تان را در یکی از 5 شعب
               دیری شاپ در شهر تهران دریافت فرمایید. لازم بذکر است که محصولات

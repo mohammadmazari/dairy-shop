@@ -27,8 +27,10 @@ function ProductPage() {
       <Header />
       <MenuHeader />
       {/* //row line */}
-      <div className="flex text-[0.4rem] md:text-[0.6rem] font-ycan text-gray-500 gap-1 border-t py-3 border-b border-gray-300 last:text-[0.7re8]">
-        <p>فروشگاه اینترنتی دیری شاپ</p>/<p>{category}</p>/<p>{name}</p>
+      <div className="flex flex-wrap text-[0.4rem] md:text-[0.6rem] font-ycan text-gray-500 gap-1 border-t py-3 border-b border-gray-300 last:text-[0.7re8]">
+        <p>فروشگاه اینترنتی دیری شاپ</p>/
+        <p>{category}</p>/
+        <p className="font-extrabold">{name}</p>
       </div>
       {/* //info product*/}
       <Infoproduct product={product} />
